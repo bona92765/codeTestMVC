@@ -1,0 +1,23 @@
+﻿
+
+@model IEnumerable<WebApplication1.Models.NBandAccoData>
+<main>
+
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">客戶資料</h1>
+    </section>
+
+    <section>
+        @{
+            foreach (var data in Model)
+            {
+                <div  class="row">
+                    <span>NationalID: @data.NationalID</span>
+                    <span>BranchID: @data.BranchID</span>
+                    <span>AcctSerialID: @data.AcctSerialID</span>
+                </div>
+
+            }
+        }
+    </section>
+</main>
